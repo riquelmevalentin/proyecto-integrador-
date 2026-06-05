@@ -11,3 +11,9 @@
     --color-texto: #333333;
     --fuente-global: 'Poppins', sans-serif;
 }
+/* reseteo universal y configuracion del modelo de caja*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*hace que padding y border se incluyan en el tamaño total del elemento*/
+}
