@@ -1,0 +1,13 @@
+/*--------- IMPORTACIÓN DE FUENTES Y CONFIGURACIÓN DE VARIABLES----------
+-----------Importamos la tipografía Poppins desde Google Fonts----------- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+:root {
+    --verde-principal: #2e7d32;
+    --verde-suave: #a5d6a7;
+    --naranja-acento: #e65100;
+    --color-fondo: #f1f8e9;
+    --color-tarjeta: #ffffff;
+    --color-texto: #333333;
+    --fuente-global: 'Poppins', sans-serif;
+}
