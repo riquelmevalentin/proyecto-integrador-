@@ -120,3 +120,59 @@ section p {
     margin-bottom: 1.5rem;
 }
 
+    /*  --------------GALERÍA MULTIMEDIA Y MAQUETACIÓN PROLIJA (CSS GRID)------------*/
+#Imagenes {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px; /* Espaciado entre elementos */
+}
+
+/* textos, títulos, enlaces sueltos e iframes ocupen todo el ancho de fila en Grid */
+#Imagenes h2, 
+#Imagenes p, 
+#Imagenes br, 
+#Imagenes iframe, 
+#Imagenes a {
+    grid-column: 1 / -1;
+}
+
+/* Estilización específica de las imágenes de producción */
+#Imagenes img {
+    width: 100%; /*adaptacion al contenedor de la cuadrícula */
+    height: 220px;
+    object-fit: cover; /* Evita que las imágenes se distorsionen */
+    border-radius: 8px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Efecto hover individual sobre las fotografías */
+#Imagenes img:hover {
+    transform: scale(1.05); 
+}
+
+#Imagenes iframe {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    aspect-ratio: 16 / 9; /* Mantiene la proporción clásica de video */
+    margin: 1.5rem auto;
+    border: none;
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+#Imagenes a {
+    text-align: center;
+    color: var(--verde-principal);
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 1rem;
+    transition: color 0.2s;
+}
+
+#Imagenes a:hover {
+    color: var(--naranja-acento);
+}
+
+
