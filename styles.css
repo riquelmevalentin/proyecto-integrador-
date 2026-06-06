@@ -76,3 +76,47 @@ nav a {
 nav a:hover {
     color: var(--naranja-acento);
 }
+
+/* -----------DISEÑO DE CONTENIDO PRINCIPAL Y TARJETAS------------- */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+}
+
+/* -----------Mensaje de bienvenida destacado---------------*/
+main > h3 {
+    text-align: center;
+    color: var(--verde-principal);
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+}
+
+/* -----------Bloques de sección estilizados como Tarjetas------------- */
+section {
+    background-color: var(--color-tarjeta);
+    border-radius: 12px;
+    padding: 2.5rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Separación visual clara */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animaciones fluidas */
+}
+
+/* ------------Efecto hover con transformación y sombra acentuada en tarjetas------------- */
+section:hover {
+    transform: translateY(-5px); /* Desplazamiento leve hacia arriba */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.12);
+}
+
+section h2 {
+    color: var(--verde-principal);
+    margin-bottom: 1.2rem;
+    border-bottom: 3px solid var(--verde-suave);
+    padding-bottom: 0.5rem;
+}
+
+section p {
+    color: #555555;
+    margin-bottom: 1.5rem;
+}
+
