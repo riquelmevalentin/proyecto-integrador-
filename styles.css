@@ -272,5 +272,66 @@ input[type="submit"]:hover {
     box-shadow: 0 6px 12px rgba(230, 81, 0, 0.35);
 }
 
+/* FOOTER (PIE DE PÁGINA) */
+footer {
+    background-color: #212121;
+    color: #e0e0e0;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    display: flex; /* Flexbox para apilar datos informativos */
+    flex-direction: column;
+    gap: 10px;
+}
+
+footer h3 {
+    color: var(--verde-suave);
+    margin-bottom: 5px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/*  OPTIMIZACIÓN COMPRENSIBLE Y RESPONSIVE DESIGN (MEDIA QUERIES) */
+/* Media Query 1: Tabletas o pc pequeñas */
+@media screen and (max-width: 768px) {
+    header {
+        padding: 1.5rem 1rem;
+    }
+    
+    nav ul {
+        gap: 12px;
+        flex-wrap: wrap; /* Permite que los elementos pasen de renglón si no entran */
+        justify-content: center;
+    }
+    
+    section {
+        padding: 1.5rem; /* Ajuste de padding para preservar espacio útil */
+    }
+}
+
+/* Media Query 2: Dispositivos Móviles Celulares */
+@media screen and (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Menú colapsa de forma vertical en teléfonos */
+        align-items: center;
+        gap: 8px;
+    }
+
+    /* La galería se adapta a una única columna vertical */
+    #Imagenes {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Aseguro que las tablas grandes no desmaqueten la pantalla en móviles pequeños */
+    table {
+        display: block;
+        overflow-x: auto; /* Genera scroll horizontal contenido interno exclusivamente en la tabla */
+    }
+}
 
 
