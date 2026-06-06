@@ -31,3 +31,10 @@ body {
     padding: 0;
     box-sizing: border-box; /*hace que padding y border se incluyan en el tamaño total del elemento*/
 }
+
+body {
+    font-family: var(--fuente-global);
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6; /* Espaciado de líneas óptimo para lectura */
+}
