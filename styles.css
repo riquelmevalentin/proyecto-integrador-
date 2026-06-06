@@ -56,3 +56,23 @@ header h1 {
     letter-spacing: 1px; /* espaciado entre caracteres*/
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
+
+/* ------------Estilizacion de nav-----------*/
+nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none; /* quito las viñetas por defecto */
+}
+
+nav a {
+    color: white;
+    text-decoration: none; /* Sin subrayado decorativo */
+    font-weight: 600;
+    padding: 5px 10px;
+    transition: color 0.3s ease, transform 0.3s ease; /* Transiciones suaves */
+}
+
+/* ------------Efecto hover dinámico basado en estados-----------*/
+nav a:hover {
+    color: var(--naranja-acento);
+}
