@@ -210,5 +210,67 @@ tr:hover {
     transition: background-color 0.2s ease;
 }
 
+/* ------FORMULARIOS Y COMPONENTES DE INTERACCIÓN -------*/
+fieldset {
+    border: 2px solid var(--verde-suave);
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+legend {
+    font-weight: 600;
+    padding: 0 10px;
+    color: var(--verde-principal);
+}
+
+label {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #444444;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    font-family: inherit; /* Hereda de manera limpia la fuente global */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Cambios de enfoque interactivos */
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--verde-principal);
+    box-shadow: 0 0 8px rgba(46, 125, 50, 0.25);
+}
+
+/* Botón de Enviar Estilizado Obligatorio */
+input[type="submit"] {
+    background-color: var(--naranja-acento);
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 30px; /* Redondeado estético */
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(230, 81, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Control de transiciones */
+}
+
+/* Efecto interactivo al pasar el cursor */
+input[type="submit"]:hover {
+    background-color: #bf360c;
+    transform: scale(1.03); /* crecimiento suave visual */
+    box-shadow: 0 6px 12px rgba(230, 81, 0, 0.35);
+}
+
 
 
