@@ -38,3 +38,21 @@ body {
     color: var(--color-texto);
     line-height: 1.6; /* Espaciado de líneas óptimo para lectura */
 }
+
+/*----------ESTRUCTURACIÓN DEL HEADER Y MENÚ DE NAVEGACIÓN----------- */
+header {
+    background-color: var(--verde-principal);
+    color: white;
+    padding: 1.5rem 2rem;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1px; /* espaciado entre caracteres*/
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
