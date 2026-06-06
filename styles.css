@@ -176,3 +176,39 @@ section p {
 }
 
 
+/* ---------ESTILIZACIÓN COMPLETA DE TABLAS (SECCIÓN PRODUCCIÓN)---------*/
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1.5rem;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+th, td {
+    padding: 14px 16px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--verde-principal);
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase; 
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+
+/* Resaltado de filas alternas con pseudo-clases estructurales */
+tr:nth-child(even) {
+    background-color: #f9fbe7;
+}
+
+tr:hover {
+    background-color: #f0f4c3;
+    transition: background-color 0.2s ease;
+}
+
+
+
