@@ -24,3 +24,15 @@ const catalogoProductos = [
     { nombre: "Cerdo", categoria: "Porcino", disponible: "Todo el año" }
 ];
 
+// Esperamos a que todo el DOM esté completamente cargado (Buenas prácticas de ciclo de vida)
+document.addEventListener("DOMContentLoaded", () => {
+    // Inicializamos los componentes interactivos de la página
+    inicializarBuscador();
+    
+    // Escuchador de Eventos para el Formulario de Contacto (Evento 1: submit)
+    const formulario = document.querySelector("#Contactanos form");
+    if (formulario) {
+        formulario.addEventListener("submit", validarFormulario);
+    }
+});
+
